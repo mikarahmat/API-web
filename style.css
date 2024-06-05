@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: #3e4772;
+}
+
+#nav-text {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nav-item {
+  margin: 0 5px;
+}
+
+.navbar-brand {
+  margin: 0 10px;
+}
+
+#nav {
+  margin: 5px 0;
+}
+
+.navbar {
+  background-color: #2b2c4f;
+}
+
+.mx-auto {
+  margin: 150px 0;
+}
+
+.text1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+.text2 {
+  color: rgba(255, 255, 255, 0.703);
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+#fetchMovies {
+  width: 200px;
+  height: auto;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  border: none;
+  background-color: #2b2c4f;
+  color: white;
+  cursor: pointer;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: -19px 20px 29px -11px rgba(255, 255, 255, 0.57);
+  -webkit-box-shadow: -19px 20px 29px -11px rgba(255, 255, 255, 0.57);
+  -moz-box-shadow: -19px 20px 29px -11px rgba(255, 255, 255, 0.57);
+}
+
+#moviesList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /* Ensures that movies wrap in case of insufficient space */
+  justify-content: center; /* Centers movies horizontally */
+  align-items: center; /* Aligns movies vertically */
+  padding-top: 30px;
+  gap: 40px; /* Adds space between movie cards */
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* Fixed width for each movie card */
+}
+
+.movie-image {
+  width: 100%; /* Makes image take full width of the .movie container */
+  height: auto;
+  border-radius: 8px;
+}
+
+.movie-title {
+  margin-top: 10px; /* Adjust spacing between the image and the title */
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  text-align: center; /* Ensures text is centered */
+}
+
+.button-container {
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally in the flex container */
+  width: 100%; /* Takes full width of its parent element */
+  margin-top: 20px; /* Adds some space above the button */
+  margin-bottom: 50px;
+}
+
+.detail-card {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Darker background for better focus on the card */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050; /* Ensures it is above other content */
+  padding: 20px; /* Prevents the modal from touching the edges */
+}
+
+.detail-content {
+  background-color: #3e4772;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Smoother shadow */
+  width: auto; /* Auto width based on content */
+  max-width: 600px; /* Maximum width */
+  overflow: hidden; /* Hides any overflow */
+  position: relative; /* For absolute positioning of elements inside */
+}
+
+.close-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 5px 8px;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #ccc; /* Adds definition */
+}
+
+.movie-image-2 {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 10px 10px 20px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 20px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 20px -3px rgba(0, 0, 0, 0.75);
+}
+
+.movie-details {
+  padding: 15px;
+  text-align: left; /* Aligns text to the left */
+}
+
+.movie-details h1 {
+  color: white;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.movie-details p {
+  color: rgba(255, 255, 255, 0.775);
+  font-weight: 600;
+  margin: 10px 0;
+}
